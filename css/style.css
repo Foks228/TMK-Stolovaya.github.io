@@ -1,6 +1,49 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800|Pacifico|Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
 /* line 1, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_extend.scss */
+
+#ratingPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 150px;
+  display: none;
+  z-index: 9999;
+  background-color: #5F7A9B;
+  text-align: center;
+  border-radius: 15px; /* Добавляем скругленные углы */
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2); /* Добавляем тень */
+  padding: 20px; /* Добавляем отступ внутри окна */
+}
+
+.ratingButton {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 5px; /* Добавляем скругленные углы к кнопкам */
+}
+
+.closeButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
