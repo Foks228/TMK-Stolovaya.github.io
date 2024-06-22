@@ -84,6 +84,18 @@
 
     <!-- about_area_end -->
 
+    <div id="ratingPopup">
+        <button class="closeButton" onclick="closePopup()">X</button>
+        <p style="color:white; font-size: 18px; font-weight: bold;">Оцените наш сайт:</p>
+        <div id="ratingOptions">
+            <button onclick="submitRating(1)" class="ratingButton">1</button>
+            <button onclick="submitRating(2)" class="ratingButton">2</button>
+            <button onclick="submitRating(3)" class="ratingButton">3</button>
+            <button onclick="submitRating(4)" class="ratingButton">4</button>
+            <button onclick="submitRating(5)" class="ratingButton">5</button>
+        </div>
+    </div>
+
     <!-- gallery_start -->
     <div class="gallery_area">
             <div class="container">
@@ -152,7 +164,7 @@
                                 Тольятти
                             </h3>
                             <p>Южное шоссе 119 <br>
-                                    <a href="#">info@burger.com</a></p>
+                                    <a href="#">so_tmk@samara.edu.ru</a></p>
                             <a class="number" href="#">+7 (495) 606–36–02</a>
 
                         </div>
@@ -163,7 +175,7 @@
                                 Москва
                             </h3>
                             <p>Ивановская площадь <br>
-                                    <a href="#">info@burger.com</a></p>
+                                    <a href="#">so_tmk@samara.edu.ru</a></p>
                             <a class="number" href="#">+7 (495) 606–36–02</a>
 
                         </div>
@@ -180,6 +192,7 @@
     </footer>
 
     <!-- JS here -->
+    <script src="js/rating.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>

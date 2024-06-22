@@ -72,6 +72,17 @@
         </div>
     </header>
     <!-- header-end -->
+    <div id="ratingPopup">
+        <button class="closeButton" onclick="closePopup()">X</button>
+        <p style="color:white; font-size: 18px; font-weight: bold;">Оцените наш сайт:</p>
+        <div id="ratingOptions">
+            <button onclick="submitRating(1)" class="ratingButton">1</button>
+            <button onclick="submitRating(2)" class="ratingButton">2</button>
+            <button onclick="submitRating(3)" class="ratingButton">3</button>
+            <button onclick="submitRating(4)" class="ratingButton">4</button>
+            <button onclick="submitRating(5)" class="ratingButton">5</button>
+        </div>
+    </div>
 
     <!-- bradcam_area_start -->
     <div class="bradcam_area breadcam_bg overlay">
@@ -93,7 +104,7 @@
                 <div class="col-xl-6 col-md-6 col-lg-6">
                     <div class="single_delicious d-flex align-items-center">
                         <div class="thumb">
-                            <img src="img/burger/1.png" alt="">
+                            <img src="img/burger/1.png">
                         </div>
                         <div class="info">
                             <h3>Борщ</h3>
@@ -147,7 +158,7 @@
                         <div class="info">
                             <h3>Макароны с ножкой курицы</h3>
                             <p>Изысканное сочетание макаронных изделий и нежного куриного мяса</p>
-                            <span>$85</span>
+                            <span>85р</span>
                         </div>
                     </div>
 
@@ -172,7 +183,7 @@
                         <div class="info">
                             <h3>Тушёная капуста</h3>
                             <p>Это вкусное и полезное блюдо, приготовленное из свежих овощей</p>
-                            <span>45</span>
+                            <span>45р</span>
                         </div>
                     </div>
                 </div>
@@ -184,7 +195,7 @@
                         <div class="info">
                             <h3>Макароны</h3>
                             <p>Это традиционное блюдо итальянской кухни, приготовленное из пшеничной муки и воды</p>
-                            <span>42</span>
+                            <span>42р</span>
                         </div>
                     </div>
                 </div>
@@ -247,6 +258,7 @@
     <!-- footer_end  -->
 
     <!-- JS here -->
+    <script src="js/rating.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
